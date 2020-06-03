@@ -1,0 +1,184 @@
+body {
+  font-family: 'TradeGothicLTStd', sans-serif;
+  background-color: #004990;
+  background-image: url("../img/fondo-landing-Version-responsive.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: #fff;
+  }
+}
+
+header {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+header .logo {
+  border-bottom: 2px solid #ffdd00;
+  text-align: center;
+  padding: 10px;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header .icono {
+  width: 38px;
+  display: block;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+header .celular {
+  display: none;
+}
+
+header .franja {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-color: #004990;
+    background-image: url("../img/Fondo-landing.jpg");
+    background-size: cover;
+    text-align: left;
+    position: relative;
+  }
+  header .titulo {
+    padding-top: 160px;
+    font-size: 70px;
+    line-height: 74px;
+  }
+  header .icono {
+    float: left;
+    margin: 0;
+    width: 80px;
+    padding-bottom: 70px;
+    padding-right: 10px;
+  }
+  header .franja {
+    display: block;
+  }
+}
+
+main {
+  margin-top: 42px;
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main ul li {
+  text-align: center;
+  margin: 15px auto;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  main ul li {
+    display: inline-block;
+    color: #004990;
+  }
+}
+
+.btn-primary {
+  color: #004990;
+  background-color: #ffdd00;
+  border: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 150px;
+  font-size: 20px;
+  padding-top: 10px;
+  margin: 5px;
+}
+
+.btn-primary:hover {
+  color: #004990;
+  background-color: #ffdd00;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-primary {
+    width: 186px;
+    margin: 15px;
+    font-size: 28px;
+    padding-top: 14px;
+  }
+}
+
+.celular-cont {
+  position: relative;
+  text-align: center;
+}
+
+.celular-cont .celular {
+  width: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .celular-cont {
+    height: 520px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .celular-cont .celular {
+    display: inline-block;
+    width: 380px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.franja {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 15px;
+  opacity: 0.7;
+}
+
+.op40 {
+  bottom: 15px;
+  opacity: 0.4;
+  height: 10px;
+}
+
+.nofooter {
+  min-height: calc(100vh - 50px);
+}
+
+.inferior {
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 15px solid #ffdd00;
+}
+
+@font-face {
+  font-family: 'TradeGothicLTStd';
+  src: url("../fonts/TradeGothicLTStd-BdCn20.otf");
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/HelveticaNeue-Black-1.otf");
+}
+/*# sourceMappingURL=principal.css.map */

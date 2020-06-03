@@ -1,0 +1,77 @@
+body {
+  font-family: 'TradeGothicLTStd', sans-serif;
+  color: #004289;
+}
+
+.flotacentros {
+  border-bottom: 20px solid #004289;
+}
+
+.flotacentros h2 {
+  border-bottom: 1px solid #004289;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.flotacentros h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.flotacentros h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.flotacentros p {
+  margin-bottom: 0.2rem;
+  margin-left: 20px;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+.flotacentros img {
+  width: 18px;
+  margin-left: -20px;
+}
+
+.flotacentros .row div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .flotacentros {
+    padding-bottom: 60px;
+  }
+  .flotacentros h2 {
+    font-size: 55px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .flotacentros h3 {
+    font-size: 36px;
+  }
+  .flotacentros h4 {
+    font-size: 26px;
+  }
+  .flotacentros p {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'TradeGothicLTStd';
+  font-weight: normal;
+  src: url("../fonts/TradeGothicLTStd Cn18.otf");
+}
+
+@font-face {
+  font-family: 'TradeGothicLTStd';
+  font-weight: bold;
+  src: url("../fonts/TradeGothicLTStd-BdCn20.otf");
+}
+/*# sourceMappingURL=principal.css.map */
