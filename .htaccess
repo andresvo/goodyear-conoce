@@ -5,3 +5,5 @@ RewriteRule ^(.*)$ https://www.conocegoodyear.cl/$1 [L,R=301]
 Redirect /catalogoconsumer /descargas/Catalogo%20Goodyear%20Consumer%20.pdf
 Redirect /catalogocommercial /descargas/Catalogo_Produtos_Commercial_2020_16x23_080620.pdf
 Redirect /catalogootr /descargas/SPANISH%20CAT%C3%81LOGO_OTR_FEB%202015.pdf
+Redirect /heroesenmovimiento /descargas/H%C3%A9roes%20en%20movimiento.jpg
+Redirect /héroesenmovimiento /descargas/H%C3%A9roes%20en%20movimiento.jpg
