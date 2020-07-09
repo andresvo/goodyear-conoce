@@ -5,5 +5,5 @@ RewriteCond %{HTTP_HOST} ^(.*)$  [NC]
 RewriteRule (.*) https://www.%1/$1 [R=301,L]
 
 Redirect /catalogoconsumer /descargas/Catalogo%20Goodyear%20Consumer%20.pdf
-Redirect /catalogocommercial /descargas/Catalogo_Produtos_Commercial_2020_16x23_080620.pdf
+Redirect /catalogocommercial /descargas/Catalogo%20neumáticos%20radiales%20y%20productos%20de%20reconstrucción%20para%20camiones%20y%20ómnibus%20–%20JULIO%202020.pdf
 Redirect /catalogootr /descargas/SPANISH%20CAT%C3%81LOGO_OTR_FEB%202015.pdf
