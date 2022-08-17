@@ -19,5 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [ContactController::class, 'index'])->middleware(['auth'])->name('dashboard');
+Route::get('/contactos/exportar', [ContactController::class, 'export'])->middleware(['auth'])->name('contacts.export');
 
 require __DIR__.'/auth.php';
