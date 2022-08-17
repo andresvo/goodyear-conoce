@@ -12,9 +12,16 @@ class ContactController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+		$date_start = $request->input('date_start') ?? date('Y-m-d', strtotime('-1 week'));
+		$date_end = $request->input('date_end') ?? date('Y-m-d');
+		$contacts = Contact::whereDate('created_at', '>=', $date_start)
+		->whereDate('created_at', '<=', $date_end)
+		->orderBy('id')
+		->get();
+
+		return view('dashboard')->with(['contacts' => $contacts, 'date_start' => $date_start, 'date_end' => $date_end]);
     }
 
     /**
