@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^conocegoodyear.cl [NC]
 RewriteRule ^(.*)$ https://www.conocegoodyear.cl/$1 [L,R=301]
 
-Redirect /catalogoconsumer /descargas/Catalogo%20Consumer%20GY%20Actualización%202022_v4.pdf
+Redirect /catalogoconsumer /descargas/Catalogo%20Consumer%20GY%20Actualizacion%20Enero%202023.pdf
 Redirect /catalogocommercial /descargas/Catalogo%20Productos%20Commercial%202021.pdf
 Redirect /catalogootr /descargas/SPANISH%20CAT%C3%81LOGO_OTR_FEB%202015.pdf
 Redirect /goodyearsaledays /descargas/Grafica-web-Cyberday-2021-Goodyear-1920x532px-250521.pdf
