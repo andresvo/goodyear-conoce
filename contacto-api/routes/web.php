@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SorteoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,6 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [ContactController::class, 'index'])->middleware(['auth'])->name('dashboard');
 Route::get('/contactos/exportar', [ContactController::class, 'export'])->middleware(['auth'])->name('contacts.export');
+Route::get('/sorteos/exportar', [SorteoController::class, 'export'])->middleware(['auth'])->name('sorteos.export');
 
 require __DIR__.'/auth.php';
