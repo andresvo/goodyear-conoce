@@ -38,10 +38,11 @@ class SorteoExport implements FromArray, WithHeadings, ShouldAutoSize, WithEvent
 				$sorteo->telefono,
 				$sorteo->rut,
 				$sorteo->email,
-				$sorteo->vehiculo,
+				$sorteo->marca,
+				$sorteo->modelo,
 				$sorteo->n_boleta,
 				$sorteo->serviteca,
-				$sorteo->boleta,
+                str_replace('contacto-api/public','', url("/")) . $sorteo->boleta,
 			];
 		}
 		return $sheet;
@@ -49,7 +50,7 @@ class SorteoExport implements FromArray, WithHeadings, ShouldAutoSize, WithEvent
 
 	public function headings(): array
     {
-        return ['Fecha', 'Nombre', 'Apellidos', 'Teléfono', 'RUT', 'Correo', 'Vehículo', 'N° Boleta', 'Serviteca', 'Boleta URL',];
+        return ['Fecha', 'Nombre', 'Apellidos', 'Teléfono', 'RUT', 'Correo', 'Marca', 'Modelo', 'N° Boleta', 'Serviteca', 'Boleta URL',];
 	}
 
 	public function registerEvents(): array
