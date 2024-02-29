@@ -55,10 +55,11 @@ class SorteoController extends Controller
         $sorteo->telefono = $request->input('telefono');
         $sorteo->rut = $request->input('rut');
         $sorteo->email = $request->input('email');
-        $sorteo->vehiculo = $request->input('vehiculo');
+        $sorteo->marca = $request->input('marca');
+        $sorteo->modelo = $request->input('modelo');
         $sorteo->n_boleta = $request->input('n_boleta');
         $sorteo->serviteca = $request->input('serviteca');
-        $sorteo->boleta = $filePath;
+        $sorteo->boleta = url('/').$filePath;
         $sorteo->save();
 
         return $sorteo;
