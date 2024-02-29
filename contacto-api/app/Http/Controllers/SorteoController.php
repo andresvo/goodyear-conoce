@@ -59,7 +59,7 @@ class SorteoController extends Controller
         $sorteo->modelo = $request->input('modelo');
         $sorteo->n_boleta = $request->input('n_boleta');
         $sorteo->serviteca = $request->input('serviteca');
-        $sorteo->boleta = url('/').$filePath;
+        $sorteo->boleta = $filePath;
         $sorteo->save();
 
         return $sorteo;
