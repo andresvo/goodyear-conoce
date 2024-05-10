@@ -7,3 +7,6 @@ Redirect /catalogocommercial /descargas/Catalogo_Productos_Commercial_2023.pdf
 Redirect /catalogootr /descargas/SPANISH%20CAT%C3%81LOGO_OTR_FEB%202015.pdf
 Redirect /goodyearsaledays /descargas/Grafica-web-Cyberday-2021-Goodyear-1920x532px-250521.pdf
 Redirect /garantia-producto /descargas/Garantia-producto.pdf
+
+RewriteRule ^C-Marathon-2\.pdf$ /descargas/C-Marathon-2.pdf [L]
+RewriteRule ^sorteos/boletas/(.*)$ /contacto-api/storage/app/public/sorteos/boletas/$1 [L]
