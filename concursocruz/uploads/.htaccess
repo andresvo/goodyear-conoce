@@ -1,0 +1,11 @@
+# Denegar acceso directo a los archivos en la carpeta uploads
+<FilesMatch ".*">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Permitir el acceso solo desde el servidor (por ejemplo, si quieres servir archivos solo a través de PHP)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ - [F,L]
+</IfModule>
