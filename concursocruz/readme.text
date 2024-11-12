@@ -1,0 +1,17 @@
+Toda esta landing se encuentra en: conocegoodyear-landings
+
+Revisar el archivo next.config.mjs -> activar las siguientes líneas
+output: 'export',
+basePath: '/concursocruz',
+assetPrefix: '/concursocruz',
+
+Compilar
+npm run build
+
+Comentar las líneas en el archivo next.config.mjs
+    //output: 'export',
+    //basePath: '/concursocruz',
+    //assetPrefix: '/concursocruz',
+
+Ejecutar con
+npm start
