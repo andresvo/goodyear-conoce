@@ -1,7 +1,7 @@
 $azul: #004990;
 $amarillo: #ffdd00;
 
-body {
+body:not(#app) {
     font-family: 'TradeGothicLTStd', sans-serif;
 	background-color: $azul;
 	background-image: url('../img/fondo-landing-Version-responsive.png');
@@ -12,7 +12,7 @@ body {
 	}
 }
 
-header {
+header:not(#app) {
 	font-family: 'HelveticaNeue', sans-serif;
 	font-size: 30px;
     line-height: 32px;
@@ -63,7 +63,7 @@ header {
 	}
 }
 
-main {
+main:not(#app) {
 	margin-top: 42px;
 	margin-bottom: 42px;
 	text-align: center;
@@ -87,7 +87,7 @@ main {
 	}
 }
 
-.btn-primary {
+.btn-primary:not(#app) {
 	color: $azul;
 	background-color: $amarillo;
 	border:0;

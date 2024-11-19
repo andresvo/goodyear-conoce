@@ -11,7 +11,23 @@ Comentar las líneas en el archivo next.config.mjs
     //basePath: '/concursocruz',
     //assetPrefix: '/concursocruz',
 
-Ejecutar con
-nohup npm start > output.log 2>&1 &
+Ejecutar conlo siguiente:
+Ejecuta tu aplicación con PM2:
+
+En el directorio de tu proyecto:
+pm2 start npm --name "nextjs-app" -- start
+--name "nextjs-app": Nombre identificativo para tu aplicación.
+-- start: Ejecuta el script start definido en package.json.
+
+Guardar la configuración para que se ejecute al reiniciar:
+pm2 save
+
+Habilitar PM2 para que inicie automáticamente al reiniciar el servidor:
+pm2 startup
+
+Sigue las instrucciones que te aparecerán para habilitarlo.
+
+Verifica que la aplicación esté corriendo:
+pm2 list
 
 Dudas o consultas las puede saber chatGPT

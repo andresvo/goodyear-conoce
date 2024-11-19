@@ -1,18 +1,18 @@
-body {
+body:not(#app) {
   font-family: 'TradeGothicLTStd', sans-serif;
   background-color: #004990;
-  background-image: url("../img/fondo-landing-Version-responsive.png");
+  background-image: url('../img/fondo-landing-Version-responsive.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  body:not(#app) {
     background: #fff;
   }
 }
 
-header {
+header:not(#app) {
   font-family: 'HelveticaNeue', sans-serif;
   font-size: 30px;
   line-height: 32px;
@@ -20,17 +20,17 @@ header {
   text-align: center;
 }
 
-header .logo {
-  border-bottom: 2px solid #ffdd00;
+header:not(#app) .logo {
+  border-bottom: 2px solid #fd0;
   text-align: center;
   padding: 10px;
 }
 
-header .logo img {
+header:not(#app) .logo img {
   width: 150px;
 }
 
-header .icono {
+header:not(#app) .icono {
   width: 38px;
   display: block;
   margin: auto;
@@ -38,67 +38,70 @@ header .icono {
   margin-bottom: 15px;
 }
 
-header .celular {
+header:not(#app) .celular {
   display: none;
 }
 
-header .franja {
+header:not(#app) .franja {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  header:not(#app) {
     background-color: #004990;
-    background-image: url("../img/Fondo-landing.jpg");
+    background-image: url('../img/Fondo-landing.jpg');
     background-size: cover;
     text-align: left;
     position: relative;
   }
-  header .titulo {
+
+  header:not(#app) .titulo {
     padding-top: 160px;
     font-size: 70px;
     line-height: 74px;
   }
-  header .icono {
+
+  header:not(#app) .icono {
     float: left;
     margin: 0;
     width: 80px;
     padding-bottom: 70px;
     padding-right: 10px;
   }
-  header .franja {
+
+  header:not(#app) .franja {
     display: block;
   }
 }
 
-main {
+main:not(#app) {
   margin-top: 42px;
   margin-bottom: 42px;
   text-align: center;
 }
 
-main ul {
+main:not(#app) ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-main ul li {
+main:not(#app) ul li {
   text-align: center;
   margin: 15px auto;
   color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-  main ul li {
+  main:not(#app) ul li {
     display: inline-block;
     color: #004990;
   }
 }
 
-.btn-primary {
+.btn-primary:not(#app) {
   color: #004990;
-  background-color: #ffdd00;
+  background-color: #fd0;
   border: 0;
   text-transform: uppercase;
   display: inline-block;
@@ -108,13 +111,13 @@ main ul li {
   margin: 5px;
 }
 
-.btn-primary:hover {
+.btn-primary:not(#app):hover {
   color: #004990;
-  background-color: #ffdd00;
+  background-color: #fd0;
 }
 
 @media screen and (min-width: 768px) {
-  .btn-primary {
+  .btn-primary:not(#app) {
     width: 186px;
     margin: 15px;
     font-size: 28px;
@@ -134,15 +137,13 @@ main ul li {
 @media screen and (min-width: 768px) {
   .celular-cont {
     height: 520px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   .celular-cont .celular {
     display: inline-block;
     width: 380px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
   }
 }
 
@@ -169,7 +170,7 @@ main ul li {
 .inferior {
   height: 50px;
   background-color: #fff;
-  border-bottom: 15px solid #ffdd00;
+  border-bottom: 15px solid #fd0;
 }
 
 @font-face {
@@ -181,4 +182,3 @@ main ul li {
   font-family: 'HelveticaNeue';
   src: url("../fonts/HelveticaNeue-Black-1.otf");
 }
-/*# sourceMappingURL=principal.css.map */
