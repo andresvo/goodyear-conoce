@@ -5,100 +5,84 @@ body:not(#app) {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media screen and (min-width: 768px) {
   body:not(#app) {
     background: #fff;
   }
 }
-
-header:not(#app) {
+body:not(#app) main {
+  margin-top: 42px;
+  margin-bottom: 42px;
+  text-align: center;
+}
+body:not(#app) main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body:not(#app) main ul li {
+  text-align: center;
+  margin: 15px auto;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  body:not(#app) main ul li {
+    display: inline-block;
+    color: #004990;
+  }
+}
+header {
   font-family: 'HelveticaNeue', sans-serif;
   font-size: 30px;
   line-height: 32px;
   color: #fff;
   text-align: center;
 }
-
-header:not(#app) .logo {
+header .logo {
   border-bottom: 2px solid #fd0;
   text-align: center;
   padding: 10px;
 }
-
-header:not(#app) .logo img {
+header .logo img {
   width: 150px;
 }
-
-header:not(#app) .icono {
+header .icono {
   width: 38px;
   display: block;
   margin: auto;
   margin-top: 70px;
   margin-bottom: 15px;
 }
-
-header:not(#app) .celular {
+header .celular {
   display: none;
 }
-
-header:not(#app) .franja {
+header .franja {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
-  header:not(#app) {
+  header {
     background-color: #004990;
     background-image: url('../img/Fondo-landing.jpg');
     background-size: cover;
     text-align: left;
     position: relative;
   }
-
-  header:not(#app) .titulo {
+  header .titulo {
     padding-top: 160px;
     font-size: 70px;
     line-height: 74px;
   }
-
-  header:not(#app) .icono {
+  header .icono {
     float: left;
     margin: 0;
     width: 80px;
     padding-bottom: 70px;
     padding-right: 10px;
   }
-
-  header:not(#app) .franja {
+  header .franja {
     display: block;
   }
 }
-
-main:not(#app) {
-  margin-top: 42px;
-  margin-bottom: 42px;
-  text-align: center;
-}
-
-main:not(#app) ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-main:not(#app) ul li {
-  text-align: center;
-  margin: 15px auto;
-  color: #fff;
-}
-
-@media screen and (min-width: 768px) {
-  main:not(#app) ul li {
-    display: inline-block;
-    color: #004990;
-  }
-}
-
 .btn-primary:not(#app) {
   color: #004990;
   background-color: #fd0;
@@ -110,12 +94,10 @@ main:not(#app) ul li {
   padding-top: 10px;
   margin: 5px;
 }
-
 .btn-primary:not(#app):hover {
   color: #004990;
   background-color: #fd0;
 }
-
 @media screen and (min-width: 768px) {
   .btn-primary:not(#app) {
     width: 186px;
@@ -124,29 +106,24 @@ main:not(#app) ul li {
     padding-top: 14px;
   }
 }
-
 .celular-cont {
   position: relative;
   text-align: center;
 }
-
 .celular-cont .celular {
   width: 230px;
 }
-
 @media screen and (min-width: 768px) {
   .celular-cont {
     height: 520px;
     display: flex;
   }
-
   .celular-cont .celular {
     display: inline-block;
     width: 380px;
     align-self: flex-end;
   }
 }
-
 .franja {
   position: absolute;
   bottom: 0;
@@ -156,29 +133,25 @@ main:not(#app) ul li {
   height: 15px;
   opacity: 0.7;
 }
-
 .op40 {
   bottom: 15px;
   opacity: 0.4;
   height: 10px;
 }
-
 .nofooter {
   min-height: calc(100vh - 50px);
 }
-
 .inferior {
   height: 50px;
   background-color: #fff;
   border-bottom: 15px solid #fd0;
 }
-
 @font-face {
   font-family: 'TradeGothicLTStd';
   src: url("../fonts/TradeGothicLTStd-BdCn20.otf");
 }
-
 @font-face {
   font-family: 'HelveticaNeue';
   src: url("../fonts/HelveticaNeue-Black-1.otf");
 }
+ 
